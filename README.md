@@ -6,9 +6,16 @@ cd exe
 go build
 exe.exe
 
+### 数据库
+mysql
+conf.yaml 配置 mysql
+建表语句放在sql目录下
+
 ### website
 vue3.0
 npm run serve
 
 ### program 定时执行
+go build 
+
 

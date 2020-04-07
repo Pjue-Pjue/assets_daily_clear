@@ -50,3 +50,12 @@ func UpdateById(id string, status int) error {
 	_, err := DB.Exec("update accounts set status=? where id=?", status, id)
 	return err
 }
+
+func GetRunningAccounts () ([]Account, error) {
+	var ret []Account
+	_, err := DB.Select(&ret, "select * from accounts where status=2 order by update_at desc")
+	if err != nil {
+		return ret, err
+	}
+	return ret, nil
+}

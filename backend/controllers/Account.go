@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"Pjue-Pjue/assets_daily_clear_web/backend/models"
+	"Pjue-Pjue/assets_daily_clear_web/models"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/pborman/uuid"

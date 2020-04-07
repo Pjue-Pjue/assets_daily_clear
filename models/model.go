@@ -1,7 +1,7 @@
 package models
 
 import (
-	"Pjue-Pjue/assets_daily_clear_web/backend/config"
+	"Pjue-Pjue/assets_daily_clear_web/config"
 	"database/sql"
 	"fmt"
 	"github.com/go-gorp/gorp"
@@ -37,5 +37,6 @@ func init() {
 
 	// 注册实体
 	DB.AddTableWithName(Account{}, "accounts").SetKeys(false, "id")
+	DB.AddTableWithName(DailyAsset{}, "daily_asset_usd_valuate").SetKeys(false, "id")
 
 }
